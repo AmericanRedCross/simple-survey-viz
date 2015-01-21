@@ -51,18 +51,46 @@ function mapData() {
   zoomOut();
 }
 
+
+
+function pointMousover(e){
+  var tooltipText = e.target.feature.properties.label;
+  $('#tooltip').append(tooltipText); 
+}
+
+function pointMouseout(e){
+  $('#tooltip').empty(); 
+}
+
 function onEachPoint(feature, layer) {
   var popupHtml = "";
   $.each(feature.properties, function(index, property){
     popupHtml += "<small>" + index + ":</small> <strong>" + property + "</strong><br>";
   })
   layer.bindPopup(popupHtml);
+  layer.on({
+    mouseover: pointMousover,
+    mouseout: pointMouseout
+  });
 }
 
 function zoomOut(){  
   map.fitBounds(surveyPoints.getBounds().pad(0.1,0.1));
 
 } 
+
+
+// tooltip follows cursor
+$(document).ready(function() {
+    $('#map').mouseover(function(e) {        
+        //Set the X and Y axis of the tooltip
+        $('#tooltip').css('top', e.pageY + 10 );
+        $('#tooltip').css('left', e.pageX + 20 );         
+    }).mousemove(function(e) {    
+        //Keep changing the X and Y axis for the tooltip, thus, the tooltip move along with the mouse
+        $("#tooltip").css({top:(e.pageY+15)+"px",left:(e.pageX+20)+"px"});        
+    });
+});
 
 // on window resize
 $(window).resize(function(){

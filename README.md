@@ -6,6 +6,7 @@
 - Download the project repository to your computer as a ZIP, and unzip the folder
 - Open your survey data in Excel (or your favorite spreadsheet software)
 	- Change the column headers for the coordinates to _latitude_ and _longitude_
+	- Change one of the column headers to _label_ (this will be the text that displays when you mouseover a marker on the map)
 	- Delete all unwanted columns
 	- Save as a _Comma Seperated Values (.csv)_ file and close
 - Open the csv file in a text editor such as Notepad or TextEdit
