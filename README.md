@@ -2,7 +2,7 @@
 
 [Online example](http://americanredcross.github.io/SimpleSurveyViz/)
 
-####Instructions:
+####Instructions to use your own data and open offline:
 - Download the project repository to your computer as a ZIP, and unzip the folder
 - Open your survey data in Excel (or your favorite spreadsheet software)
 	- Change the column headers for the coordinates to _latitude_ and _longitude_
