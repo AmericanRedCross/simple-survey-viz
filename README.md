@@ -1,11 +1,13 @@
 ## Simple survey viz
 
+[Online example](http://americanredcross.github.io/SimpleSurveyViz/)
+
 ####Instructions:
 - Download the project repository to your computer as a ZIP, and unzip the folder
 - Open your survey data in Excel (or your favorite spreadsheet software)
 	- Change the column headers for the coordinates to _latitude_ and _longitude_
 	- Delete all unwanted columns
-	- Save as a __Comma Seperated Values (.csv)__ file and close
+	- Save as a _Comma Seperated Values (.csv)_ file and close
 - Open the csv file in a text editor such as Notepad or TextEdit
 	- Select all the text (ctrl+A / command+A) and copy
 	- Open your web browser and go to [http://togeojson.com/](http://togeojson.com/)
@@ -22,8 +24,4 @@
 	- Clicking a point should display the survey data for that point in a popup
 	- With an internet connection, an [OpenStreetMap](http://www.openstreetmap.org/) basemap should display
 
-
-**Technology Used:**
-- [Leaflet.js](http://leafletjs.com/)
-- [jQuery](http://jquery.com/)
-- [Bootstrap](http://getbootstrap.com/)
+**Technology Used:** [Leaflet.js](http://leafletjs.com/), [jQuery](http://jquery.com/), [Bootstrap](http://getbootstrap.com/)
