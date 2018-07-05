@@ -1,6 +1,6 @@
 ## Simple survey viz
 
-[Online example](http://americanredcross.github.io/SimpleSurveyViz/)
+[Online example](http://americanredcross.github.io/simple-survey-viz/)
 
 ####Instructions to use your own data and open offline:
 - Download the project repository to your computer as a ZIP, and unzip the folder
